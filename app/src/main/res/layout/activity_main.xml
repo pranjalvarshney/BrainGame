@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:padding="20dp"
+        android:elevation="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="wrap_content"
+            android:text="Brain Games"
+            android:textSize="30sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:id="@+id/rellay1"
+            android:layout_below="@id/tv_1"
+            android:background="#7E57C2"
+            android:layout_centerInParent="true"
+            android:padding="30dp"
+            android:elevation="-10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_play"
+                android:text="Play"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_select_level"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/tv_play"
+                android:text="------   Select level  ------"
+                android:textStyle="normal"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/linear1"
+                android:layout_below="@id/tv_select_level"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btn_easy_level"
+                    android:text="Easy"
+                    android:textSize="25sp"
+                    android:paddingTop="10dp"
+                    android:background="#9CCC65"
+                    android:paddingBottom="10dp"
+                    android:elevation="5dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:textColor="#ffffff"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content" />
+
+
+                <Button
+                    android:id="@+id/btn_medium_level"
+                    android:text="Medium"
+                    android:layout_gravity="center"
+                    android:textSize="25sp"
+                    android:layout_margin="10dp"
+                    android:paddingTop="10dp"
+                    android:background="#FFD54F"
+                    android:paddingBottom="10dp"
+                    android:elevation="5dp"
+                    android:textColor="#ffffff"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/btn_hard_level"
+                    android:text="Hard"
+                    android:textSize="25sp"
+                    android:paddingTop="10dp"
+                    android:background="#E57373"
+                    android:paddingBottom="10dp"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center"
+                    android:elevation="5dp"
+                    android:textColor="#ffffff"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        <Button
+            android:id="@+id/btn_view_high_score"
+            android:text="View High Score"
+            android:background="#FF639A"
+            android:layout_below="@id/rellay1"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#FFFFFF"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
